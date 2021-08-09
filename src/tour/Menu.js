@@ -33,10 +33,10 @@ const Menu=({products,addToCart})=>{
                    <article key={id} className="menu-item">
                        <img src={img} alt="varun"/>
                    <div className="item-info">
-                     <header>    
+                     <div className="header">    
                        <h4>{title}</h4>
                        <h4 className="price">rs {price}</h4>
-                     </header>    
+                     </div>    
                        <p>{info}</p>
                        <button className="btn" onClick={()=>addToCart(id)}>Add Item</button>
                        </div>  

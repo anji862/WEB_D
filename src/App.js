@@ -9,8 +9,8 @@ import Main from './project/food/Main '
 
 const App=()=>{
     return <>
-        {/* <Header />
-        <Main /> */}
+        <Header />
+        <Main />
         <Menu/>
         <Cart/>
     </>
