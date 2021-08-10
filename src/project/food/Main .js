@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import "./Main.css";
 import { items } from "./items";
 import Header from './header';
-
 const Main = () => {
     return <>
         <Header/>
