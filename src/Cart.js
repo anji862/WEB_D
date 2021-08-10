@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import {connect} from 'react-redux';
 import {removeFromCart} from './redux/Food/food-actions';
+import Header from './project/food/header';
 
 const Cart=({cart,removeFromCart})=>{
     const [total,setTotal]=useState(0);
@@ -12,6 +13,7 @@ const Cart=({cart,removeFromCart})=>{
        setTotal(price);
     },[cart,total,setTotal])
     return<>
+        <Header/>
         <h1>Cart-Items</h1>
         <h4>Total Amount: {total} rs.</h4>
         {

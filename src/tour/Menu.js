@@ -4,6 +4,7 @@ import Category from './Category';
 import './Menu.css';
 import {addToCart} from '../redux/Food/food-actions';
 import {connect} from 'react-redux';
+import Header from '../project/food/header';
 
 const Menu=({products,addToCart})=>{
     console.log(products);
@@ -18,6 +19,7 @@ const Menu=({products,addToCart})=>{
         setItems(newItems);
     }
     return<>
+        <Header/>
         <section>
             <div>
                 <h1>Our Menu</h1>

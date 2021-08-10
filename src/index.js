@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import {Provider} from 'react-redux';
 import store from './redux/store';
-import './index.css'
+import './index.css';
+import { BrowserRouter} from "react-router-dom";
 // import './tour/index.css'
 // import UserData from './UserData'
 // import './UserData.css'
@@ -38,7 +39,7 @@ import './index.css'
 // //     </>);
 // // }
 
-ReactDOM.render(<><Provider store={store}><App/></Provider></>,document.getElementById("root"));
+ReactDOM.render(<><BrowserRouter><Provider store={store}><App/></Provider></BrowserRouter></>,document.getElementById("root"));
 
 
 
